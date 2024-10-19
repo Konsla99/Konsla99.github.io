@@ -71,6 +71,19 @@
 #### 5.  Rendering (3DGS-EAGLES) ~ing
 
 
+## 📝 Other Works
+
+#### 1. MMP study (Multi media programing)-opencv
+
+#### 2. 
+
+#### 3.
+
+#### 4. Git & Source tree
+
+#### 5.
+
+
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=konsla99&label=Profile%20views&color=0e75b6&style=flat" alt="konsla99" /> </p>
