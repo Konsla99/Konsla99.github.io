@@ -1,34 +1,21 @@
+<h1 align="center">채민기 Portfolio</h1>
 
-# 채민기 Portfolio
+<h2 align="left">🚀 About Me</h2>
+<p>
+  안녕하세요. 저는 신입 임베디드 시스템, 리눅스 개발자 채민기입니다. 새로운 기술을 끊임없이 공부하고 실제 프로젝트에 적용하며 결과를 확인하는 것을 좋아합니다.
+  임베디드 시스템에 관심이 있으며 코드 리뷰 하는 것을 좋아합니다. 현재 신입 임베디드 시스템 개발자로 구직 중입니다.
+</p>
 
-채민기(Mingi Chae) - Konsla99 포트폴리오
+<h2 align="left">👋 Introduce</h2>
+<ul>
+  <li>1. Skills</li>
+  <li>2. Project</li>
+  <li>3. Other work</li>
+  <li>4. Github</li>
+  <li>5. Contact</li>
+</ul>
 
-
-## 🚀 About Me
-
-안녕하세요. 
-저는 신입 임베디드 시스템, 리눅스 개발자
-채민기입니다.
-
-새로운 기술을 끊임없이 공부하고 실제 프로젝트에 적용하며 결과를 확인하는 것을 좋아합니다.
-
-임베디드 시스템에 관심이 있으며 코드 리뷰 하는 것을 좋아합니다.
-
-현재 신입 임베디드 시스템
-개발자로 구직중입니다.
-
-
-##  👋Intorduce
-
-1. Skils
-2. Project
-3. other work
-4. Github  
-5. Contact
-
-
-
-## 🛠 Skills
+<h2 align="left">🛠 Skills</h2>
 
 <h3 align="left">Languages:</h3>
 <p align="left">
@@ -53,42 +40,22 @@
   <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a>
 </p>
 
+<h2 align="left">📝 Project</h2>
+<p>진행한 프로젝트 내역입니다.</p>
+<ul>
+  <li>1. AI cam (Embedded sys & devicedriver)</li>
+  <li>2. Custom case (CycleGan)</li>
+  <li>3. Fire detection (YoloV9)</li>
+  <li>4. Rendering (3DGS-EAGLES) ~ing</li>
+</ul>
 
-
-
-## 📝 Project
-
-진행한 프로젝트 내역입니다.
-
-#### 1. AI cam(Embedded sys& devicedriver)
-
-#### 2. Custom case(CycleGan)
-
-#### 3. Fire detection (YoloV9)
-
-#### 4. 
-
-#### 5.  Rendering (3DGS-EAGLES) ~ing
-
-
-## 📝 Other Works
-
-#### 1. MMP study (Multi media programing)-opencv
-
-#### 2. 
-
-#### 3.
-
-#### 4. Git & Source tree
-
-#### 5.
-
-
-
+<h2 align="left">📝 Other Works</h2>
+<ul>
+  <li>1. MMP study (Multi media programming) - opencv</li>
+  <li>2. Git & Source tree</li>
+</ul>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=konsla99&label=Profile%20views&color=0e75b6&style=flat" alt="konsla99" /> </p>
-
-
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=konsla99&show_icons=true&locale=en&layout=compact" alt="konsla99" /></p>
 
