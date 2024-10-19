@@ -45,7 +45,7 @@
 <h2 align="left">📝 Project</h2>
 <p>진행한 프로젝트 내역입니다.</p>
 <ul>
-  <li>1. AI cam (Embedded sys & devicedriver)</li>
+  <li>1. AI cam (Embedded sys & device_driver)</li>
   <li>2. Custom case (CycleGan)</li>
   <li>3. Fire detection (YoloV9)</li>
   <li>4. Rendering (3DGS-EAGLES) ~ing</li>
