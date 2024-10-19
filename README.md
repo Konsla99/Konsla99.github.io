@@ -68,11 +68,7 @@
 
 #### 4. 
 
-#### 5.
-
-#### 6. 
-
-###  Rendering (3DGS-EAGLES)
+#### 5.  Rendering (3DGS-EAGLES) ~ing
 
 
 
