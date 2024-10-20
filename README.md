@@ -46,10 +46,38 @@
 <h2 align="left">📝 Project</h2>
 <p>진행한 프로젝트 내역입니다.</p>
 <ul>
-  <li>1. AI cam (Embedded sys & device_driver)</li>
-  <li>2. Custom case (CycleGan)</li>
-  <li>3. Fire detection (YoloV9)</li>
-  <li>4. Rendering (3DGS-EAGLES) ~ing</li>
+<h3>1. AI Cam (Embedded sys & device driver)</h3>
+<p>라즈베리 파이를 이용한 AI & Device Driver 팀 프로젝트</p>
+<ul>
+  <li><strong>개발기간:</strong> 2023. 11 ~ 2023. 12 (3인)</li>
+  <li><strong>핵심 역할:</strong> 팀원, 디바이스 드라이버 개발, AI 학습, 회로 제작, 리눅스 커널 빌드 담당</li>
+</ul>
+<h4>HW:</h4>
+<ul>
+  <li>Raspberry Pi 4</li>
+  <li>스텝 모터 (Step Motor)</li>
+  <li>LED</li>
+  <li>라즈베리 파이 카메라 모듈 (Raspberry Pi Camera Module)</li>
+  <li>스피커 (Speaker)</li>
+</ul>
+<h4>SW:</h4>
+<ul>
+  <li>AI 모델 (이미지 분류, Image Classification)</li>
+  <li>디바이스 드라이버 (스텝 모터, LED, 스피커)</li>
+  <li>메인 프로그램 (C & Python)</li>
+  <li><strong>기술 스택 및 도구:</strong></li>
+  <ul>
+    <li>프로그래밍 언어: C, Python</li>
+    <li>플랫폼: Raspberry Pi OS (Linux)</li>
+    <li>도구: 리눅스 커널 빌드, Python 라이브러리 (OpenCV 등)</li>
+  </ul>
+</ul>
+<h4>도전 과제 및 해결 방법:</h4>
+<p><strong>도전 과제:</strong> 카메라 모듈의 실시간 이미지 처리를 위한 성능 최적화가 필요했음.</p>
+<p><strong>해결 방법:</strong> Raspberry Pi의 하드웨어 가속을 활용해 이미지 처리 시간을 단축했으며, OpenCV를 사용해 효율적인 이미지 처리를 구현.</p>
+
+<p><strong>미리보기:</strong> "CODE & PICTURE"</p>
+<p><a href="#">프로젝트 레포지토리 및 설명 링크</a></p
 </ul>
 
 <h2 align="left">📝 Other Works</h2>
