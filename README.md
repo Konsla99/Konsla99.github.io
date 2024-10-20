@@ -76,7 +76,7 @@
 <p><strong>해결 방법:</strong> Raspberry Pi의 하드웨어 가속을 활용해 이미지 처리 시간을 단축했으며, OpenCV를 사용해 효율적인 이미지 처리를 구현.</p>
 
 <p><strong>미리보기:</strong> "CODE & PICTURE"</p>
-<p><a href="#">프로젝트 레포지토리 및 설명 링크</a></p
+<p><a href="https://github.com/Konsla99/KONSLA99_work/tree/main/EMB_Rpi4/emb_proj">프로젝트 레포지토리 및 설명 링크</a></p>
 </ul>
 
 <h2 align="left">📝 Other Works</h2>
