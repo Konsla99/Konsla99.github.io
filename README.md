@@ -63,7 +63,7 @@
 <h4>SW:</h4>
 <ul>
   <li>AI 모델 (이미지 분류, Image Classification)</li>
-  <li>디바이스 드라이버 (스텝 모터, LED, 스피커)</li>
+  <li>디바이스 드라이버 (스텝 모터, LED)</li>
   <li>메인 프로그램 (C & Python)</li>
   <li><strong>기술 스택 및 도구:</strong></li>
   <ul>
