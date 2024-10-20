@@ -77,7 +77,8 @@
 <p><strong>해결 방법:</strong> Raspberry Pyhton에서 Ai처리 이후 출력값을 PIPE 를 통해 C언어 main파일로 전송하여 프로그램을 제어하도록 구성.</p>
 
 <p><strong>미리보기:</strong> "CODE & PICTURE"</p>
-<p><a href="[https://github.com/Konsla99/KONSLA99_work/tree/main/EMB_Rpi4/emb_proj](https://github.com/Konsla99/KONSLA99_work/blob/main/EMB_Rpi4/emb_proj/README.md)">프로젝트 레포지토리 및 설명 링크</a></p>
+<p><a href="https://github.com/Konsla99/KONSLA99_work/blob/main/EMB_Rpi4/emb_proj/README.md">프로젝트 레포지토리 및 설명 링크</a></p>
+
 </ul>
 
 <h2 align="left">📝 Other Works</h2>
