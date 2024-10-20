@@ -73,8 +73,8 @@
   </ul>
 </ul>
 <h4>도전 과제 및 해결 방법:</h4>
-<p><strong>도전 과제:</strong> 카메라 모듈의 실시간 이미지 처리를 위한 성능 최적화가 필요했음.</p>
-<p><strong>해결 방법:</strong> Raspberry Pi의 하드웨어 가속을 활용해 이미지 처리 시간을 단축했으며, OpenCV를 사용해 효율적인 이미지 처리를 구현.</p>
+<p><strong>도전 과제:</strong> 카메라 모듈의 실시간 이미지 처리를 통한 디바이스 드라이버 제어.</p>
+<p><strong>해결 방법:</strong> Raspberry Pyhton에서 Ai처리 이후 출력값을 PIPE 를 통해 C언어 main파일로 전송하여 프로그램을 제어하도록 구성.</p>
 
 <p><strong>미리보기:</strong> "CODE & PICTURE"</p>
 <p><a href="https://github.com/Konsla99/KONSLA99_work/tree/main/EMB_Rpi4/emb_proj">프로젝트 레포지토리 및 설명 링크</a></p>
