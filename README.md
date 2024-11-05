@@ -120,7 +120,7 @@
 <h3>3.Custom Case (CycleGAN)</h3>
 <p>젯슨 보드를 활용한 휴대폰, 에어팟, 태블릿 커스텀 케이스 제작 프로젝트</p>
 <ul>
-  <li><strong>개발기간:</strong> 2023. 11 ~</li>
+  <li><strong>개발기간:</strong> 2023. 11 ~ 2023. 12 </li>
   <li><strong>핵심 역할:</strong> 팀장, AI 학습, 인터페이스 제작</li>
 </ul>
 
