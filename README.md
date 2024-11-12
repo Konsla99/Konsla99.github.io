@@ -84,9 +84,10 @@
         <li>
             <p><strong>도전 과제:</strong> 카메라 모듈의 실시간 이미지 처리를 통한 디바이스 드라이버 제어.</p>
         <li>
-            <p><strong>해결 방법:</strong> Raspberry Python에서 AI 처리 이후 출력값을 PIPE를 통해 C 언어 main 파일로 전송하여 프로그램을 제어하도록 구성.</p>
+            <p><strong>해결 방법:</strong> Raspberry Python에서 AI 처리 이후 출력값을 PIPE를 통해 C 언어 main 파일로 전송하여 프로그램을 제어하도록 구성.</p></li>
     </ul>
 </ul>
+
 <p><a href="https://github.com/Konsla99/KONSLA99_work/blob/main/EMB_Rpi4/emb_proj/README.md">프로젝트 상세 설명 링크</a></p>
 
 <hr>
