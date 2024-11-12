@@ -175,6 +175,15 @@
 
 <hr>
   <h3>2. Git & Source tree</h3>
+<p><strong>스터디 목적:</strong> Git을 활용하여 버전 관리 및 협업 방법을 익히는 것</p>
+
+<h4>도구:</h4>
+<ul>
+  <li>Git</li>
+  <li>GitHub</li>
+  <li>SourceTree</li>
+</ul>
+<p><a href="https://github.com/Konsla99/how-to-use-git">레포지토리 및 설명 링크</a></p>
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=konsla99&label=Profile%20views&color=0e75b6&style=flat" alt="konsla99" /> </p>
