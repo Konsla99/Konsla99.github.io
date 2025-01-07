@@ -1,5 +1,10 @@
 <h1 align="center">채민기 Portfolio</h1>
 
+<br>
+<div style="display: flex;">
+    <div style="width: 75px; background-color: #bff;"></div>
+    <div style="padding-left: 30px;">
+
 <h2 align="left">🚀 About Me</h2>
 <p>
     안녕하세요. 저는 신입 임베디드 시스템, 리눅스 개발자 채민기입니다. <br>
@@ -49,6 +54,7 @@
     <li><a href="#ai-cam">1. AI Cam (Embedded sys & device driver)</a></li>
     <li><a href="#fire-detection">2. Fire Detection (YOLOv9)</a></li>
     <li><a href="#custom-case">3. Custom Case (CycleGAN)</a></li>
+    <li><a href="#efficient-gaussian">4. Improve EAGLES (Efficient 3D Gaussian Encoding)</a></li>
 </ul>
 
 <h3 id="ai-cam" align="left">1. AI Cam (Embedded sys & device driver)</h3>
@@ -141,6 +147,36 @@
     <li><strong>해결 방법:</strong> 학습 scheduler를 활용하고 활성화 함수 관련 논문을 참조해 비선형성 학습을 높일 수 있는 활성화 함수를 찾아 학습을 시도</li>
 </ul>
 <p><a href="https://github.com/Konsla99/KONSLA99_work/blob/main/Cyclegan/Readme.md">프로젝트 상세설명 링크</a></p>
+
+<hr>
+<h3 id="efficient-gaussian" align="left">4. Improve EAGLES (Efficient 3D Gaussian Encoding)</h3>
+<p> 임베디드 환경에서 3D 렌더링을 목표로 경량화 및 최적화를 수행한 개인 프로젝트</p>
+<ul>
+    <li><strong>개발기간:</strong> 2024. 09 ~ 2024. 11 (개인)</li>
+    <li><strong>핵심 역할:</strong> Pruning interval 및 ratio 동적 적용 코드 제작, AI 학습, 하이퍼 파라미터 튜닝</li>
+</ul>
+<h4 align="left">HW:</h4>
+<ul>
+    <li>RTX 3060</li>
+</ul>
+<h4 align="left">SW:</h4>
+<ul>
+    <li>모델: 3DGS, EAGLES</li>
+</ul>
+<h4 align="left">기술 스택 및 도구:</h4>
+<ul>
+    <li>프로그래밍 언어: Python</li>
+    <li>플랫폼: Windows (Anaconda)</li>
+    <li>도구: Conda, SIBR Viewer, PyQt</li>
+</ul>
+<h4 align="left">주요 내용:</h4>
+<ul>
+    <li>Ply 및 PKL 파일 크기: 56% 감소</li>
+    <li>추론 시간: 20% 단축</li>
+    <li>학습 시간: 14% 단축</li>
+    <li>PSNR: 성능 유지</li>
+</ul>
+<p><a href="https://github.com/Konsla99/KONSLA99_work/blob/main/efficientgaussian/README.md">프로젝트 상세설명 링크</a></p>
 
 <hr>
 
