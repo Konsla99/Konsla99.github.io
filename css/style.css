@@ -1,0 +1,207 @@
+/* ==========================================================================
+   Custom Base & Print Styles (Tailwind CSS Extension)
+   ========================================================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.2);
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7C4DFF !important;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Header active link styling */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7C4DFF;
+    transition: all 0.3s ease;
+}
+.dark .nav-link::after {
+    background: #7C4DFF;
+}
+.light .nav-link::after {
+    background: #6200EA;
+}
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Typing Pointer blinking animation */
+.typing-text {
+    animation: blink 0.75s step-end infinite;
+}
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #06b6d4; }
+}
+
+/* Skill Progress animation transition */
+.skill-progress {
+    transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Image Fallbacks */
+.profile-avatar-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #7C4DFF, #00B0FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+}
+.project-image-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #7C4DFF, #00B0FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Modal Open class */
+.modal-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-overlay.open .modal-container {
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Print Styles Optimization
+   ========================================================================== */
+@media print {
+    html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+        overflow: visible !important;
+    }
+    
+    /* Hide interactive web-only elements */
+    #header, 
+    #mobile-drawer, 
+    footer, 
+    #project-modal,
+    .project-filters,
+    .typing-text::after,
+    [class*="glow-bg"] {
+        display: none !important;
+    }
+    
+    /* Reset layout grid/flex margins */
+    main {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    section {
+        padding: 20px 0 !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+        page-break-inside: auto !important;
+    }
+    
+    /* Headings */
+    h2 {
+        font-size: 18pt !important;
+        color: #000000 !important;
+        text-align: left !important;
+        margin-bottom: 15px !important;
+    }
+    h2::after {
+        display: none !important;
+    }
+    
+    /* Timeline print layout */
+    .timeline-container::before {
+        left: 16px !important;
+    }
+    .timeline-container > div {
+        flex-direction: row !important;
+        margin-bottom: 20px !important;
+        page-break-inside: avoid !important;
+    }
+    .timeline-container > div > div:first-child {
+        display: none !important; /* Node */
+    }
+    .timeline-container > div > div:last-child {
+        width: 100% !important;
+        margin-left: 24px !important;
+        padding: 0 !important;
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Skills print layout */
+    #skills > div {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 15px !important;
+    }
+    #skills .skill-item {
+        margin-bottom: 10px !important;
+    }
+    .skill-progress {
+        background: #000000 !important;
+        width: 100% !important; /* force fill or show static representation */
+    }
+    
+    /* Projects print layout */
+    #projects > div {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    .project-card {
+        flex-direction: row !important;
+        border: 1px solid #e2e8f0 !important;
+        background: none !important;
+        box-shadow: none !important;
+        border-radius: 12px !important;
+        page-break-inside: avoid !important;
+    }
+    .project-card > div:first-child {
+        width: 180px !important;
+        height: 100% !important;
+        border-bottom: none !important;
+        border-right: 1px solid #e2e8f0 !important;
+    }
+    .project-card > div:last-child {
+        padding: 16px !important;
+    }
+    .project-card p {
+        -webkit-line-clamp: none !important;
+    }
+    
+    /* Page Break controls */
+    .page-break-before-me {
+        page-break-before: always !important;
+        break-before: always !important;
+    }
+}
