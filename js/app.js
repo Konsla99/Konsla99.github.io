@@ -13,12 +13,12 @@ const projectData = {
         title: '구강 3D 스캐너 검사장비 개발',
         period: '2025.03 - 2025.06 (인턴)',
         category: '오스템임플란트 - 스캐너 연구소',
-        purpose: '구강 3D 스캐너의 단일 깊이(Single Depth) 해상도 및 매핑 알고리즘을 정밀 검사하기 위한 하드웨어 지그 및 모터 제어 GUI 애플리케이션 개발.',
+        purpose: '구강 3D 스캐너의 Single Depth 알고리즘 검사를 위한 검사장치 제어 APP 개발.',
         tasks: [
             'C++/Qt 기반 GUI 애플리케이션 아키텍처 설계 및 구현',
             'OpenCV를 활용한 실시간 카메라 피드 스트리밍 및 영상 출력 프레임 레이트 최적화',
-            'Auto Exposure(자동 노출) 및 Saturation(포화도) 실시간 제어 옵션 구현',
-            '모터 제어(Yaw 360도, Pitch 90도 회전) 로직을 멀티쓰레딩으로 처리하여 UI 응답성(지연 시간) 개선',
+            'Auto Exposure 및 Saturation 실시간 제어 옵션 구현',
+            '모터 제어(Yaw 360도, Pitch 90도 회전) 로직을 멀티쓰레딩으로 처리하여 UI 응답성 개선',
             '장치 연동 과정에서 발생하던 병목 구간 제거 및 코드 리팩토링'
         ],
         outcomes: [
@@ -26,7 +26,7 @@ const projectData = {
             '비전 알고리즘 처리 루프 개선으로 프로세스 메모리 사용량 약 13% 절감',
             '검사장치 기능 매뉴얼 작성 및 Deprecated 코드 정리로 유지보수성 확보'
         ],
-        techStack: ['C++', 'Qt', 'OpenCV', 'Multi-Threading'],
+        techStack: ['C++', 'Qt', 'OpenCV'],
         images: [
             { src: './images/osstem_implant/singleDepth_UI.png', caption: '검사장치 애플리케이션 GUI 화면' }
         ]
@@ -38,13 +38,13 @@ const projectData = {
         purpose: '구강 스캐너 개발 및 생산 단계에서 내부 광학계, LED, 카메라 센서의 핵심 기능들을 개별적으로 제어하고 검증하는 연구용 유틸리티 SW 고도화.',
         tasks: [
             '스캐너 펌웨어(FW) 업데이트 및 추가 기능 요구사항에 대응한 Qt 기반 화면/기능 개발',
-            '3D Reconstruction(3차원 복원) 핵심 알고리즘 모듈의 특정 하드웨어 의존성을 제거하여 범용 테스트 가능하도록 개선',
+            '3D Reconstruction 알고리즘 모듈의 HW 의존성을 제거하여 범용 테스트 가능하도록 개선',
             '실시간 카메라 제어: 카메라 시퀀스 커스텀 모드 및 RGB 노출 수동 조절 기능 개발',
             '모니터링: 자동 노출 작동 시 센서 내부 파라미터 변화 추이를 실시간으로 모니터링하는 시각화 기능 추가',
             'AI 연동: 연조직 필터링 AI 모델의 스캔 피드 연동 및 실시간 On/Off 스위치 기능 탑재'
         ],
         outcomes: [
-            '비전공 연구원 및 생산팀 인원들도 쉽게 스캐너 하드웨어를 진단할 수 있도록 UI 직관성 개선',
+            'SW 비전공 팀원들도 쉽게 스캐너 SW를 진단할 수 있도록 UI 직관성 개선',
             '캘리브레이션 매개변수 모니터링을 통해 장비 트레이드오프(Trade-off) 분석 및 튜닝 효율성 극대화',
             '문제 상황 발생 시 원인 분석(Trouble-shooting) 프로세스 단축'
         ],
@@ -66,7 +66,7 @@ const projectData = {
             '프로그램 구동 시 중복되거나 잘못 연결된 타 장비 세션을 강제 초기화하는 안전장치 도입'
         ],
         outcomes: [
-            '공정 단계에서 오작동으로 인한 잘못된 데이터 주입 예방 및 데이터 무결성 확보',
+            '제조 단계에서 장비별 파츠 Life cycle 관리 지원',
             'Wi-Fi 자동 재연결 기능 구현으로 작업자의 수동 설정 번거로움을 해결하여 생산 운영 효율 개선',
             '해당 정보 관리 모듈의 안정성을 인정받아 사내 다른 테스트 애플리케이션의 핵심 라이브러리로 이식'
         ],
@@ -85,8 +85,8 @@ const projectData = {
         tasks: [
             'PyTorch 기반의 실시간 2D/3D 연조직 세그멘테이션 모델 파라미터 최적화 및 경량화',
             '대규모 구강 데이터셋 관리 및 라벨링 프로세스 자동화를 위한 로컬 데이터셋 검수용 Qt 툴 제작',
-            'CVAT(온라인 어노테이션 툴) 가이드라인 수립 및 원격 라벨링 협업 데이터 무결성 검수',
-            '기존 분할(Segmentation) 모델의 물리적 해상도 한계를 극복하기 위해 분류(Classification) 모델을 결합한 하이브리드 연동 아키텍처 개발'
+            'CVAT 가이드라인 수립 및 원격 라벨링 협업 데이터 무결성 검수',
+            '기존 분할(Segmentation) 모델의 학습 한계를 극복하기 위해 분류(Classification) 모델을 결합한 하이브리드 연동 아키텍처 개발'
         ],
         outcomes: [
             '연조직 감지 인공지능 모델의 정확도(DICE Score) 7.8% 향상',
@@ -101,52 +101,49 @@ const projectData = {
             { src: './images/osstem_implant/AnnotationViewer.png', caption: '로컬 데이터 어노테이션 뷰어 및 검수 전용 툴' }
         ]
     },
+    'work-5': {
+        title: 'LLM Harness 기반 양산 개발 워크플로우 자동화',
+        period: '2026.01 - 현재 (연구원)',
+        category: '피에스케이 홀딩스 - SW G',
+        purpose: '반복적인 양산 개발 절차의 표준화 및 LLM 하네스(Harness) 연동을 통한 개발 생산성 향상 및 양산 적용 자동화.',
+        tasks: [
+            '반복적인 양산 업무 절차를 표준화하여 Skill.md, 실행 스크립트, 레퍼런스 모듈 구축',
+            'AI 에이전트가 정해진 규칙 및 컨텍스트 가이드에 따라 작업을 수행할 수 있도록 툴 연동 인터페이스 및 하네스 설계',
+            '주요 양산 동작 스크립트 자동화를 통한 프로세스 최적화 및 휴먼 에러 방지'
+        ],
+        outcomes: [
+            '양산 프로세스 자동화를 통해 양산 적용 작업 시간 70% 단축',
+            '컨텍스트 가이드 및 표준화 스크립트를 통한 절차상의 Human Error 차단'
+        ],
+        techStack: ['LLM Harness', 'Python', 'AI AGENT (CODEX SKILL)'],
+        images: []
+    },
+    'work-6': {
+        title: '로그 분석 및 SW개발 AI 하네스 구축',
+        period: '2026.01 - 현재 (연구원)',
+        category: '피에스케이 홀딩스 - SW G',
+        purpose: '장비 구조 및 과거 이력 지식 베이스를 시스템 프롬프트로 연동하여 AI 기반 로그 분석을 자동화하고, 파츠별 이력 데이터를 컨텍스트로 활용해 코드 리뷰 자동화 및 사전 결함 예방을 달성함.',
+        tasks: [
+            '장비 구조, 부품사 정보, 과거 이슈 이력 및 로그 데이터를 등록하고 조회할 수 있는 웹 기반 UI 관리 플랫폼 개발 및 JSON 데이터 파이프라인 구축',
+            '로깅 컨벤션, 시퀀스 해석 로직, 특정 로그 패턴별 대응 이슈 매핑 데이터를 시스템 프롬프트로 체계화한 로그 분석 AI 스킬 설계',
+            'AI 에이전트가 워크스페이스 내 로컬 파일(JSON, MD)에 기반한 검증된 분석 결과만을 도출하도록 행동 규칙 및 참조 범위를 제한하는 AGENTS.md 기반 제어 하네스 구현'
+        ],
+        outcomes: [
+            '로그 전달 시 장비 이력, 부품 정보, 패턴별 이슈 DB를 AI가 자동 매핑 및 발생 원인 시퀀스를 도출하여 장애 분석 및 유사 로그 분석 시간 단축',
+            '타 부서-개발팀 간 HW 파츠 이력 공유 절차 일원화 및 이력 확인 효율성 개선',
+            'HW 이슈 기반 코드 리뷰 자동화를 통해 파츠 관련 SW 불량 및 휴먼 에러 방지',
+            '표준화된 스킬 규격 적용으로 장비 데이터 참조 시 AI 환각(Hallucination) 현상 차단'
+        ],
+        techStack: ['JSON DB', 'AI AGENT(CODEX)', 'LLM Harness'],
+        images: [
+            { src: './images/psk/log_harness_AI.png', caption: '장비/파츠 이력 기반 AI 로그 분석 시스템 설계 및 UI 예시' }
+        ]
+    },
     'side-1': {
         title: '드론용 화재 감지 & 분석 시스템',
         period: '사이드 프로젝트',
         category: '임베디드 AI 융합 연구',
-        purpose: '고가의 열화상 센서 없이 일반 RGB 카메라가 장착된 드론 온보드 환경에서 AI 객체 인식과 단안 깊이 추정(Mono Depth)을 결합하여 실시간 화재 거리 및 위험도를 계산하는 시스템.',
-        tasks: [
-            'YOLOv9 모델을 활용한 화재(연기, 불꽃) 실시간 감지 모델 학습',
-            'Mono Depth Estimation 모델을 연동하여 2D 이미지 내 화재 지점의 상대적 거리 계산 알고리즘 개발',
-            '제한된 드론 컴퓨팅 파워(NVIDIA Jetson)를 고려해 구조적 가지치기(Pruning) 및 TensorRT 가속 적용',
-            '총 60여 개의 학습 파라미터 조합 기반 벤치마킹을 통한 최적의 경량화 모델 도출'
-        ],
-        outcomes: [
-            'Jetson Edge 보드 상에서의 인공지능 모델 추론 지연(Latency) 시간 11% 단축',
-            '센서 추가 없이 단일 카메라만으로 거리 기반 화재 위험 수준(3단계) 실시간 온보드 분석 및 시각화 구현'
-        ],
-        techStack: ['YOLOv9', 'TensorRT', 'Model Pruning', 'Mono Depth', 'Python', 'Jetson Board'],
-        images: [
-            { src: './images/side_projects/gr.png', caption: '실시간 화재 위험도 감지 및 거리 추정 화면' },
-            { src: './images/side_projects/flow.png', caption: '드론 온보드 화재 감지 및 거리 가중치 연산 알고리즘 흐름도' }
-        ]
-    },
-    'side-2': {
-        title: '사용자 트래킹 스마트 캠',
-        period: '사이드 프로젝트',
-        category: '임베디드 & 디바이스 드라이버',
-        purpose: '카메라 모듈이 사용자의 움직임을 실시간으로 추적하여 중앙 앵글을 유지하고, 특정 손동작(제스처)을 인식해 등록된 하드웨어 동작을 수행하는 스마트 임베디드 시스템.',
-        tasks: [
-            'Raspberry Pi 4 보드 상에 카메라 모듈 및 서보 모터(2축) 구동 서킷 설계',
-            'Python 프로세스(AI 모델 추론 담당)와 C 프로세스(메인 제어 및 모터 드라이버 제어 담당) 간의 IPC(Named Pipe) 통신 구현',
-            'MediaPipe 기반의 실시간 얼굴 및 제스처 랜드마크 분석 구현',
-            '모터 제어 시 불안정한 흔들림을 방지하기 위해 신뢰도 스코어(Confidence Score) 필터 및 이동평균 필터 적용'
-        ],
-        outcomes: [
-            '카메라 트래킹의 오차 범위를 줄이고 부드러운 모터 틸트/팬 구동 구현',
-            '프로세스 간 모듈화를 통해 AI 교체 및 디바이스 드라이버 추가가 용이한 유연한 임베디드 소프트웨어 구조 확립'
-        ],
-        techStack: ['Image Classification', 'C', 'Python', 'Raspberry Pi 4', 'Linux Driver', 'IPC (Pipe)'],
-        images: [
-            { src: './images/side_projects/embedded_system_architecture.png', caption: '스마트 캠 하드웨어 및 소프트웨어 연동 시스템 아키텍처' }
-        ]
-    },
-    'side-3': {
-        title: 'AI 활용 케이스 디자인 APP',
-        period: '사이드 프로젝트',
-        category: '컴퓨터 비전 및 GUI',
-        purpose: '인공지능 이미지 스타일 변환 기술과 이미지 후처리 필터를 결합하여 사용자가 원하는 스타일로 일러스트 케이스 디자인을 생성 및 커스터마이징할 수 있는 데스크톱 툴.',
+        purpose: '고화질 외곽선 추출 옵션을 결합해 높은 자유도의 고품질 일러스트 시안 자동 생성 및 로컬 환경(Jetson, PC) 프리뷰 지연 시간 최소화.',
         tasks: [
             'CycleGAN 아키텍처를 이용해 사용자 사진을 특정 예술 스타일로 변환하는 모델 학습 및 구현',
             'OpenCV Canny Edge 및 라플라시안 필터를 결합하여 케이스 형태의 윤곽선을 정밀 추출하고 합성하는 파이프라인 설계',
@@ -167,7 +164,6 @@ const projectData = {
 // --- 2. Initialize App on DOM Loaded ---
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
-    initTyping();
     initScrollSpy();
     initSkillAnimation();
     initProjectFilters();
@@ -233,50 +229,7 @@ function updateThemeIcon(theme) {
     }
 }
 
-// --- 4. Typing Animation ---
-function initTyping() {
-    const typingSpan = document.querySelector('.typing-text');
-    if (!typingSpan) return;
-    
-    const phrases = [
-        'C++ & 비전 AI 개발자 채민기입니다.',
-        '임베디드 소프트웨어 엔지니어 채민기입니다.',
-        '장비 기능 구현과 성능 개선을 전문으로 합니다.'
-    ];
-    
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-    
-    function type() {
-        const currentPhrase = phrases[phraseIndex];
-        
-        if (isDeleting) {
-            typingSpan.textContent = currentPhrase.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 40; // delete faster
-        } else {
-            typingSpan.textContent = currentPhrase.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 120; // normal typing
-        }
-        
-        // Typo pauses
-        if (!isDeleting && charIndex === currentPhrase.length) {
-            isDeleting = true;
-            typingSpeed = 2000; // Pause at end of phrase
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typingSpeed = 500; // Pause before typing next phrase
-        }
-        
-        setTimeout(type, typingSpeed);
-    }
-    
-    setTimeout(type, 800);
-}
+
 
 // --- 5. Scroll Spy (Active Links) ---
 function initScrollSpy() {

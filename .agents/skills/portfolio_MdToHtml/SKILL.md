@@ -24,6 +24,8 @@ description: Syncs and reflects updates from portfolio_input.md into index.html 
 
 ### A. 개인 정보 (About Me)
 - **자기소개 및 연락처**: `index.html` 내의 `#hero` 및 `#about` 영역에 있는 프로필 설명 문구, 거주지, 이메일, 깃허브 및 블로그 링크를 업데이트합니다.
+- **히어로 소개 텍스트**: `index.html` 내의 `#hero` 섹션에 있는 요약 소개글(`<p class="text-base sm:text-lg ...">`)을 `portfolio_input.md`의 `* **히어로 요약 소개**:` 항목과 동기화합니다.
+- **타이핑 애니메이션 문구**: `js/app.js` 내의 `initTyping` 함수 안에 있는 `phrases` 배열을 `portfolio_input.md`의 `* **히어로 타이핑 문구**:` 목록과 동기화합니다.
 - **프로필 이미지**: `./images/cha_minkee_photo.jpg` 파일이 최신 버전으로 교체되었는지 확인하고 필요시 경로를 동기화합니다.
 
 ### B. 회사 경력 (Work Experience)
