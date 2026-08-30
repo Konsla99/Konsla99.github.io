@@ -143,7 +143,48 @@ const projectData = {
         title: '드론용 화재 감지 & 분석 시스템',
         period: '사이드 프로젝트',
         category: '임베디드 AI 융합 연구',
-        purpose: '고화질 외곽선 추출 옵션을 결합해 높은 자유도의 고품질 일러스트 시안 자동 생성 및 로컬 환경(Jetson, PC) 프리뷰 지연 시간 최소화.',
+        purpose: '고가의 열화상 센서 없이 일반 RGB 카메라가 장착된 드론 온보드 환경에서 AI 객체 인식과 단안 깊이 추정(Mono Depth)을 결합하여 실시간 화재 거리 및 위험도를 계산하는 시스템.',
+        tasks: [
+            'YOLOv9 모델을 활용한 화재(연기, 불꽃) 실시간 감지 모델 학습',
+            'Mono Depth Estimation 모델을 연동하여 2D 이미지 내 화재 지점의 상대적 거리 계산 알고리즘 개발',
+            '제한된 드론 컴퓨팅 파워(NVIDIA Jetson)를 고려해 구조적 가지치기(Pruning) 및 TensorRT 가속 적용',
+            '총 60여 개의 학습 파라미터 조합 기반 벤치마킹을 통한 최적의 경량화 모델 도출'
+        ],
+        outcomes: [
+            'Jetson Edge 보드 상에서의 인공지능 모델 추론 지연(Latency) 시간 11% 단축',
+            '센서 추가 없이 단일 카메라만으로 거리 기반 화재 위험도 실시간 온보드 분석 및 시각화 구현'
+        ],
+        techStack: ['YOLOv9', 'TensorRT', 'Model Pruning', 'Mono Depth', 'Python', 'Jetson Board'],
+        images: [
+            { src: './images/side_projects/gr.png', caption: '실시간 화재 위험도 감지 및 거리 추정 화면' },
+            { src: './images/side_projects/flow.png', caption: '드론 온보드 화재 감지 및 거리 가중치 연산 알고리즘 흐름도' }
+        ]
+    },
+    'side-2': {
+        title: '사용자 트래킹 스마트 캠',
+        period: '사이드 프로젝트',
+        category: '임베디드 & 디바이스 드라이버',
+        purpose: '카메라 모듈이 사용자의 움직임을 실시간으로 추적하여 중앙 앵글을 유지하고, 특정 손동작(제스처)을 인식해 등록된 하드웨어 동작을 수행하는 스마트 임대디드 시스템.',
+        tasks: [
+            'Raspberry Pi 4 보드 상에 카메라 모듈 및 서보 모터(2축) 구동 서킷 설계',
+            'Python 프로세스(AI 모델 추론 담당)와 C 프로세스(메인 제어 및 모터 드라이버 제어 담당) 간의 IPC(Named Pipe) 통신 구현',
+            'MediaPipe 기반의 실시간 얼굴 및 제스처 랜드마크 분석 구현',
+            '모터 제어 시 불안정한 흔들림을 방지하기 위해 신뢰도 스코어(Confidence Score) 필터 및 이동평균 필터 적용'
+        ],
+        outcomes: [
+            '카메라 트래킹의 오차 범위를 줄이고 부드러운 모터 틸트/팬 구동 구현',
+            '프로세스 간 모듈화를 통해 AI 교체 및 디바이스 드라이버 추가가 용이한 유연한 임베디드 소프트웨어 구조 확립'
+        ],
+        techStack: ['Image Classification', 'C', 'Python', 'Raspberry Pi 4', 'Linux Driver', 'IPC (Pipe)'],
+        images: [
+            { src: './images/side_projects/embedded_system_architecture.png', caption: '스마트 캠 하드웨어 및 소프트웨어 연동 시스템 아키텍처' }
+        ]
+    },
+    'side-3': {
+        title: 'AI 활용 케이스 디자인 APP',
+        period: '사이드 프로젝트',
+        category: '컴퓨터 비전 및 GUI',
+        purpose: '인공지능 이미지 스타일 변환 기술과 이미지 후처리 필터를 결합하여 사용자가 원하는 스타일로 일러스트 케이스 디자인을 생성 및 커스터마이징할 수 있는 데스크톱 툴.',
         tasks: [
             'CycleGAN 아키텍처를 이용해 사용자 사진을 특정 예술 스타일로 변환하는 모델 학습 및 구현',
             'OpenCV Canny Edge 및 라플라시안 필터를 결합하여 케이스 형태의 윤곽선을 정밀 추출하고 합성하는 파이프라인 설계',

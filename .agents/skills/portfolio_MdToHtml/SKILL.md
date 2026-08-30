@@ -23,6 +23,7 @@ description: Syncs and reflects updates from portfolio_input.md into index.html 
 ## 2. 영역별 소스 반영 규칙
 
 ### A. 개인 정보 (About Me)
+- **줄바꿈 반영 규칙**: `portfolio_input.md` 내에 줄바꿈(개행)이나 `\n` 문자가 존재할 경우, `index.html`에 반영 시 문단 분리(`<p>` 태그) 또는 개행 태그(`<br>`)를 활용하여 화면에 개행이 정확히 나타나도록 처리해야 합니다.
 - **자기소개 및 연락처**: `index.html` 내의 `#hero` 및 `#about` 영역에 있는 프로필 설명 문구, 거주지, 이메일, 깃허브 및 블로그 링크를 업데이트합니다.
 - **히어로 소개 텍스트**: `index.html` 내의 `#hero` 섹션에 있는 요약 소개글(`<p class="text-base sm:text-lg ...">`)을 `portfolio_input.md`의 `* **히어로 요약 소개**:` 항목과 동기화합니다.
 - **타이핑 애니메이션 문구**: `js/app.js` 내의 `initTyping` 함수 안에 있는 `phrases` 배열을 `portfolio_input.md`의 `* **히어로 타이핑 문구**:` 목록과 동기화합니다.
